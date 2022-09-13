@@ -1,0 +1,9 @@
+com\security\jasonwebtoken\dto\UserJWTDTO.class
+com\security\jasonwebtoken\repository\RolesRepository.class
+com\security\jasonwebtoken\JasonwebtokenApplication.class
+com\security\jasonwebtoken\dto\RolesDTO.class
+com\security\jasonwebtoken\entity\Roles.class
+com\security\jasonwebtoken\entity\UserJWT.class
+com\security\jasonwebtoken\service\RolesService.class
+com\security\jasonwebtoken\repository\UserJWTRepository.class
+com\security\jasonwebtoken\service\UserJWTService.class
