@@ -1,6 +1,6 @@
 package com.security.jasonwebtoken.service;
 
-import com.security.jasonwebtoken.entity.UserJWT;
+import com.security.jasonwebtoken.entity.Userjwt;
 import com.security.jasonwebtoken.repository.UserJWTRepository;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +13,7 @@ public class UserJWTService {
         this.repository = usersJWTRepository;
     }
 
-    public UserJWT createUser(UserJWT user) {
+    public Userjwt createUser(Userjwt user) {
         return this.repository.save(user);
     }
 }

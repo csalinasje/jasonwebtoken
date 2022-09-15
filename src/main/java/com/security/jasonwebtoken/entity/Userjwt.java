@@ -1,17 +1,18 @@
 package com.security.jasonwebtoken.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.security.jasonwebtoken.enums.RolEnum;
 import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serial;
 import java.io.Serializable;
-import java.util.List;
 
 @Entity
 @Table(name="usersjwt")
 @Data
-public class UserJWT implements Serializable {
+@NoArgsConstructor
+public class Userjwt implements Serializable {
     @Serial
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -25,6 +26,7 @@ public class UserJWT implements Serializable {
     @Column
     private Boolean isActive;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Roles> roles;
+    @Column
+    @NonNull
+    private RolEnum rol;
 }
